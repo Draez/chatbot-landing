@@ -1,17 +1,9 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
 
 export function Navbar() {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const navItems = [
-        { name: "Home", link: "/" },
-        { name: "Features", link: "#features" },
-        { name: "Contact", link: "#contact" },
-    ];
-
     return (
         <nav className="backdrop-blur-md fixed w-full z-20 top-0 left-0 text-black">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-8">
